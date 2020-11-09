@@ -149,11 +149,11 @@ img {
 
 #navbar .nav-container ul li ul {
   opacity: 0;
-  -moz-transition: 2s;
-	-webkit-transition: 2s;
-	-ms-transition: 2s;
-	-o-transition: 2s;
-  transition: 2s;
+  -moz-transition: 1s;
+	-webkit-transition: 1s;
+	-ms-transition: 1s;
+	-o-transition: 1s;
+  transition: 1s;
   display: flex;
   position: absolute;
   width: 600px;
@@ -409,7 +409,7 @@ h3 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 85px;
+  padding-left: 185px;
   letter-spacing: 10px;
 }
 
@@ -479,15 +479,10 @@ h3 {
   to {box-shadow: 0 0 20px  #333;}
 }
 
-#ship-layout .animation:hover #eyewink{
-  animation: none;
-  -webkit-animation: none;
-  /* opacity: 0; */
-}
-
 #ship-layout .animation:hover {
   transform: none;
   -webkit-transform: none;
+  transition: 0.5s;
   box-shadow: 0 0 12px #333;
   cursor: pointer;
 }
@@ -568,6 +563,11 @@ h3 {
   opacity: 0;
   right: 600px;
   transition: 1s;
+  -moz-transition: 1s; 
+  -ms-transition: 1s; 
+  -webkit-transition: 1s; 
+  -o-transition: 1s; 
+  
 }
 
 #ship-layout .spare-parts:hover .title-dropdown {
@@ -770,23 +770,45 @@ h3 {
 }
 
 #gallery .gallery-items img {
-  padding-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 #gallery .gallery-items img:first-child {
   padding-top: 10px;
 }
 
-#gallery .position-spare-parts {
+/* scroll */
+
+#gallery .first-position {
   position: relative;
-  bottom: 415px;
+  bottom: 650px;
+}
+
+a.scroll-section {
+  position: relative;
+  bottom: 60px;
+}
+
+a.scroll-contacts-section {
+  position: relative;
+  bottom: 100px;
+}
+
+a.scroll {
+  position: relative;
+  bottom: 250px;
+}
+
+#gallery .gallery-img {
+  transition: 1s;
 }
 
 #gallery .gallery-img:hover {
   box-shadow: 0 0 12px #333;
-  cursor: pointer;
-  border: 1px solid #000;
+  box-shadow: 0 0 12px red;
+  transform: scale(1.2);
 }
+
 
 /* 20: Contacts */
 #contacts {
