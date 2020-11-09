@@ -1,0 +1,982 @@
+@font-face {
+  font-family: lazy-crazy;
+  src: url(../fonts/lazyc___.ttf);
+}
+
+@font-face {
+  font-family: magistral;
+  src: url(../fonts/magistral.ttf);
+}
+
+@font-face {
+  font-family: second-slade;
+  src: url(../fonts/second-slade.TTF);
+}
+
+@font-face {
+  font-family: molot;
+  src: url(../fonts/10436.TTF);
+}
+
+/* color */
+:root {
+  --main-color: #015085;
+}
+
+/* Reset */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Main Styling */
+
+body {
+  font-family: lazy-crazy;
+  letter-spacing: -3px;
+  background-color: #f1f1f1;
+}
+
+h2,
+h3,
+h4 {
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+p {
+  letter-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.background {
+  background: url(../img/other/slide-background.png) no-repeat center
+    center/cover;
+  background-color: #fff;
+}
+
+.promo-bg {
+  background: url(../img/other/1st-slide-bg.jpg) no-repeat center center/cover;
+  background-color: #fff;
+}
+
+/* Navbar */
+#hero {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0;
+}
+
+#navbar {
+  background: rgba(1, 64, 105, 0.8);
+  color: #ddd;
+  height: 60px;
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+#navbar .nav-container {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+  height: inherit;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+#navbar .nav-info {
+  display: flex;
+}
+
+#navbar .nav-container .nav-info ul:first-child li {
+  padding-right: 25px;
+}
+
+#navbar .nav-container .nav-info ul:last-child li:nth-child(2) {
+  color: #ddd;
+}
+
+#navbar ul li {
+  color: #333;
+  display: inline-block;
+  position: relative;
+}
+
+#navbar .services > ul > li,
+#navbar .nav-container a {
+  color: #ddd;
+  padding: 25px 0;
+}
+
+#navbar .nav-container a:hover,
+#navbar .services > ul > li:hover {
+  color: #fff;
+}
+
+/* Hide nested ul by default */
+#navbar .nav-container ul > li > ul {
+  display: none;
+}
+
+#navbar .nav-container ul > li:hover {
+  cursor: pointer;
+}
+
+#navbar .nav-container ul li:hover a {
+  color: #fff;
+}
+
+#navbar .nav-container ul li ul {
+  opacity: 0;
+  -moz-transition: 2s;
+	-webkit-transition: 2s;
+	-ms-transition: 2s;
+	-o-transition: 2s;
+  transition: 2s;
+  display: flex;
+  position: absolute;
+  width: 600px;
+  margin-top: 25px;
+  background: rgba(1, 64, 105, 0.8);
+  padding: 20px;
+  border-radius: 0 0 5px 5px;
+  right: 600px;
+}
+
+/* Nested dropdown shown */
+#navbar .nav-container ul li:hover ul {
+  opacity: 1;
+  left: 0px;
+}
+
+#navbar .nav-container ul li ul > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#navbar .nav-container ul li ul > div:last-child {
+  margin-left: 60px;
+}
+
+#navbar .nav-container ul li ul li {
+  padding: 10px 20px;
+}
+
+#navbar .nav-container ul li:hover ul li a {
+  color: #ddd;
+}
+
+#navbar .nav-container ul li:hover ul li a:hover {
+  color: #fff;
+}
+
+/* Showcase background */
+#hero {
+  background: #333;
+  height: 100vh;
+  position: relative;
+}
+
+#hero::before {
+  content: "";
+  background: url("../img/other/photo_2020-10-27_11-21-06.jpg") no-repeat center
+    center/cover;
+  position: absolute;
+  height: inherit;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.5;
+}
+
+/* Showcase */
+#showcase {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  height: inherit;
+}
+
+#showcase > * {
+  z-index: 1;
+}
+
+#showcase h1 {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+#showcase .border-bottom {
+  width: 300px;
+  border-bottom: 8px solid var(--main-color);
+  border-radius: 25%;
+  margin: 15px 0;
+}
+
+#showcase h3 {
+  font-size: 30px;
+}
+
+#showcase h1,
+h3 {
+  text-transform: uppercase;
+}
+
+#showcase .logo-showcase {
+  width: 130px;
+  margin-bottom: 20px;
+}
+
+/* About */
+
+#leverans-baltic-introduction .introduction {
+  width: 1100px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding-top: 57px;
+}
+
+#leverans-baltic-introduction .introduction-item {
+  font-family: second-slade;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 100;
+  line-height: 1.25;
+}
+
+#leverans-baltic-introduction .item1 {
+  position: relative;
+  bottom: 2px;
+}
+
+#leverans-baltic-introduction .item1 .line1::after {
+  content: "";
+  background: url(../img/underlines/line1.png) no-repeat center center/cover;
+  height: 5px;
+  width: 190px;
+  top: 28px;
+  left: 230px;
+  position: absolute;
+}
+
+#leverans-baltic-introduction .item1 .line2::after {
+  content: "";
+  background: url(../img/underlines/line2.png) no-repeat center center/cover;
+  height: 9px;
+  width: 45px;
+  top: 26px;
+  left: 460px;
+  position: absolute;
+}
+
+#leverans-baltic-introduction .item1 .line3::after {
+  content: "";
+  background: url(../img/underlines/line3.png) no-repeat center center/cover;
+  height: 11px;
+  width: 145px;
+  top: 96px;
+  left: 555px;
+  position: absolute;
+}
+
+#leverans-baltic-introduction .item2 {
+  position: relative;
+  bottom: 6px;
+}
+
+#leverans-baltic-introduction .item2 .line4::after {
+  content: "";
+  background: url(../img/underlines/line4.png) no-repeat center center/cover;
+  height: 6px;
+  width: 170px;
+  top: 28px;
+  left: 110px;
+  position: absolute;
+}
+
+#leverans-baltic-introduction .item3 {
+  position: relative;
+  bottom: 10px;
+}
+
+#leverans-baltic-introduction .item3 .line5::after {
+  content: "";
+  background: url(../img/underlines/line5.png) no-repeat center center/cover;
+  height: 3px;
+  width: 80px;
+  top: 26px;
+  left: 295px;
+  position: absolute;
+}
+
+#leverans-baltic-introduction .item3 .line6::after {
+  content: "";
+  background: url(../img/underlines/line6.png) no-repeat center center/cover;
+  height: 3px;
+  width: 130px;
+  top: 66px;
+  left: 425px;
+  position: absolute;
+}
+
+#leverans-baltic-introduction .item4 {
+  position: relative;
+  bottom: 14px;
+}
+
+#leverans-baltic-introduction .item4 .line7::after {
+  content: "";
+  background: url(../img/underlines/line7.png) no-repeat center center/cover;
+  height: 8px;
+  width: 180px;
+  top: 28px;
+  left: 145px;
+  position: absolute;
+}
+
+#leverans-baltic-introduction .item5 {
+  position: relative;
+  bottom: 18px;
+}
+
+#leverans-baltic-introduction .item5 .line8::after {
+  content: "";
+  background: url(../img/underlines/line8.png) no-repeat center center/cover;
+  height: 4px;
+  width: 200px;
+  top: 26px;
+  left: 145px;
+  position: absolute;
+}
+
+#leverans-baltic-introduction .item6 {
+  position: relative;
+  bottom: 22px;
+}
+
+#leverans-baltic-introduction .item6 .line9::after {
+  content: "";
+  background: url(../img/underlines/line9.png) no-repeat center center/cover;
+  height: 5px;
+  width: 180px;
+  top: 26px;
+  left: 290px;
+  position: absolute;
+}
+
+#leverans-baltic-introduction .slide-footer {
+  margin-top: 20px;
+  position: relative;
+  bottom: 20px;
+}
+
+/* Slide-Footer */
+.slide-footer {
+  font-family: magistral;
+  background: rgba(1, 64, 105, 0.8);
+  color: #fff;
+  margin-top: -5px;
+  line-height: none;
+  font-weight: lighter;
+}
+
+.slide-footer .footer-items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 85px;
+  letter-spacing: 10px;
+}
+
+.slide-footer .footer-items .item {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 1px;
+}
+
+.slide-footer .footer-items i {
+  padding: 1px 25px 0 25px;
+  position: relative;
+  bottom: -1.25px;
+  transform: rotate(30deg);
+  left: 4px;
+}
+
+/* Logo */
+.logo {
+  max-width: 150px;
+  position: relative;
+  margin-top: -200px;
+  margin-bottom: 20px;
+  left: 1025px;
+}
+
+/* Ship Layout */
+#ship-layout .ship-background {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 845px;
+  width: 1150px;
+  background: url(../img/other/Ship.png) no-repeat center center/cover;
+  position: relative;
+  top: 50px;
+  left: 20px;
+}
+
+#ship-layout .ship-background .top,
+#ship-layout .ship-background .mid,
+#ship-layout .ship-background .bottom {
+  display: flex;
+  flex-direction: row;
+}
+
+#ship-layout .ship-background .animation {
+  border: 1.5px solid #333;
+  background-color: #f2ea8c;
+  box-shadow: 0 6px 4px -4px #333;
+  display: inline-block;
+  font-size: 22px;
+  height: 40px;
+  text-align: center;
+  padding: 0 10px;
+}
+
+#ship-layout .ship-background #eyewink {
+  -webkit-animation: eyewink 3s infinite reverse ease-in-out;
+  animation: eyewink 3s infinite reverse ease-in-out;
+  /* opacity: 1; */
+}
+
+@keyframes eyewink {
+  from {box-shadow: 0 0 20px  #333;}
+  50% {box-shadow: 0 0 1px  #333;}
+  to {box-shadow: 0 0 20px  #333;}
+}
+
+#ship-layout .animation:hover #eyewink{
+  animation: none;
+  -webkit-animation: none;
+  /* opacity: 0; */
+}
+
+#ship-layout .animation:hover {
+  transform: none;
+  -webkit-transform: none;
+  box-shadow: 0 0 12px #333;
+  cursor: pointer;
+}
+
+#ship-layout .logistic {
+  position: relative;
+  right: 150px;
+  top: 20px;
+  transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg); /* Для Firefox */
+  -ms-transform: rotate(-10deg); /* Для IE */
+  -webkit-transform: rotate(-10deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(-10deg); /* Для Opera */
+}
+
+#ship-layout .flag {
+  position: relative;
+  left: 40px;
+  top: 20px;
+  transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg); /* Для Firefox */
+  -ms-transform: rotate(-20deg); /* Для IE */
+  -webkit-transform: rotate(-20deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(-20deg); /* Для Opera */
+}
+
+#ship-layout .video {
+  position: relative;
+  bottom: 30px;
+  left: 125px;
+  transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg); /* Для Firefox */
+  -ms-transform: rotate(-5deg); /* Для IE */
+  -webkit-transform: rotate(-5deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(-5deg); /* Для Opera */
+}
+
+#ship-layout .safety-equipment {
+  position: relative;
+  top: 200px;
+  left: 100px;
+  transform: rotate(-7deg);
+  -moz-transform: rotate(-7deg); /* Для Firefox */
+  -ms-transform: rotate(-7deg); /* Для IE */
+  -webkit-transform: rotate(-7deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(-7deg); /* Для Opera */
+}
+
+#ship-layout .propeller {
+  position: relative;
+  left: 230px;
+  top: 105px;
+  transform: rotate(-7deg);
+  -moz-transform: rotate(-7deg); /* Для Firefox */
+  -ms-transform: rotate(-7deg); /* Для IE */
+  -webkit-transform: rotate(-7deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(-7deg); /* Для Opera */
+}
+
+/* Sticker with dropdown */
+#ship-layout .spare-parts {
+  position: relative;
+  left: 90px;
+  bottom: 10px;
+  letter-spacing: 1px;
+  transform: rotate(10deg);
+  -moz-transform: rotate(10deg); /* Для Firefox */
+  -ms-transform: rotate(10deg); /* Для IE */
+  -webkit-transform: rotate(10deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(10deg); /* Для Opera */
+}
+
+#ship-layout .spare-parts .title-dropdown {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 260px;
+  opacity: 0;
+  right: 600px;
+  transition: 1s;
+}
+
+#ship-layout .spare-parts:hover .title-dropdown {
+  opacity: 1;
+  right: -120px;
+}
+
+#ship-layout .spare-parts:hover .title-dropdown .hydraulic {
+  position: relative;
+  top: 15px;
+  width: 110px;
+  margin-left: 5px;
+  transform: rotate(5deg);
+  -moz-transform: rotate(5deg); /* Для Firefox */
+  -ms-transform: rotate(5deg); /* Для IE */
+  -webkit-transform: rotate(5deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(5deg); /* Для Opera */
+}
+
+#ship-layout .spare-parts:hover .title-dropdown .hydraulic:hover,
+.coolers:hover {
+  margin-left: 5px;
+  transform: rotate(0deg);
+  -moz-transform: rotate(0deg); /* Для Firefox */
+  -ms-transform: rotate(0deg); /* Для IE */
+  -webkit-transform: rotate(0deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(0deg); /* Для Opera */
+}
+
+#ship-layout .spare-parts:hover .title-dropdown .container {
+  position: relative;
+  top: 10px;
+  right: 30px;
+  transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg); /* Для Firefox */
+  -ms-transform: rotate(-3deg); /* Для IE */
+  -webkit-transform: rotate(-3deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(-3deg); /* Для Opera */
+  margin-top: 15px;
+}
+
+#ship-layout .spare-parts:hover .title-dropdown .container:hover {
+  transform: rotate(0deg);
+  -moz-transform: rotate(0deg); /* Для Firefox */
+  -ms-transform: rotate(0deg); /* Для IE */
+  -webkit-transform: rotate(0deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(0deg); /* Для Opera */
+}
+
+#ship-layout .spare-parts:hover .title-dropdown .coolers {
+  position: relative;
+  top: 30px;
+  width: 110px;
+  margin-left: 5px;
+  transform: rotate(5deg);
+  -moz-transform: rotate(5deg); /* Для Firefox */
+  -ms-transform: rotate(5deg); /* Для IE */
+  -webkit-transform: rotate(5deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(5deg); /* Для Opera */
+}
+
+#ship-layout .spare-parts:hover .title-dropdown .coolers:hover {
+  transform: rotate(0deg);
+  -moz-transform: rotate(0deg); /* Для Firefox */
+  -ms-transform: rotate(0deg); /* Для IE */
+  -webkit-transform: rotate(0deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(0deg); /* Для Opera */
+}
+
+#ship-layout .bunkering-oil {
+  position: relative;
+  left: 350px;
+  top: 130px;
+  transform: rotate(4deg);
+  -moz-transform: rotate(4deg); /* Для Firefox */
+  -ms-transform: rotate(4deg); /* Для IE */
+  -webkit-transform: rotate(4deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(4deg); /* Для Opera */
+}
+
+#ship-layout .bow-thruster {
+  position: relative;
+  left: 400px;
+  top: 100px;
+  transform: rotate(-7deg);
+  -moz-transform: rotate(-7deg); /* Для Firefox */
+  -ms-transform: rotate(-7deg); /* Для IE */
+  -webkit-transform: rotate(-7deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(-7deg); /* Для Opera */
+}
+
+#ship-layout .anchor {
+  position: relative;
+  left: 500px;
+  top: 120px;
+  transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg); /* Для Firefox */
+  -ms-transform: rotate(-3deg); /* Для IE */
+  -webkit-transform: rotate(-3deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(-3deg); /* Для Opera */
+}
+
+#ship-layout .ropes {
+  position: relative;
+  left: 450px;
+  top: 100px;
+  transform: rotate(5deg);
+  -moz-transform: rotate(5deg); /* Для Firefox */
+  -ms-transform: rotate(5deg); /* Для IE */
+  -webkit-transform: rotate(5deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(5deg); /* Для Opera */
+}
+
+#ship-layout .chemicals {
+  position: relative;
+  left: 480px;
+  top: 40px;
+  transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg); /* Для Firefox */
+  -ms-transform: rotate(-5deg); /* Для IE */
+  -webkit-transform: rotate(-5deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(-5deg); /* Для Opera */
+}
+
+#ship-layout .fire-fighting {
+  position: relative;
+  left: 320px;
+  top: 60px;
+  transform: rotate(3deg);
+  -moz-transform: rotate(3deg); /* Для Firefox */
+  -ms-transform: rotate(3deg); /* Для IE */
+  -webkit-transform: rotate(3deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(3deg); /* Для Opera */
+}
+
+#ship-layout .cabins-equipment {
+  position: relative;
+  top: 200px;
+  right: 200px;
+  transform: rotate(-4deg);
+  -moz-transform: rotate(-4deg); /* Для Firefox */
+  -ms-transform: rotate(-4deg); /* Для IE */
+  -webkit-transform: rotate(-4deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(-4deg); /* Для Opera */
+}
+
+#ship-layout .electrical-equipment {
+  position: relative;
+  top: 110px;
+  left: 10px;
+  transform: rotate(-4deg);
+  -moz-transform: rotate(-4deg); /* Для Firefox */
+  -ms-transform: rotate(-4deg); /* Для IE */
+  -webkit-transform: rotate(-4deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(-4deg); /* Для Opera */
+}
+
+#ship-layout .navigation-service {
+  position: relative;
+  left: 60px;
+  top: 40px;
+  transform: rotate(4deg);
+  -moz-transform: rotate(4deg); /* Для Firefox */
+  -ms-transform: rotate(4deg); /* Для IE */
+  -webkit-transform: rotate(4deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(4deg); /* Для Opera */
+}
+
+#ship-layout .valves-pipes {
+  position: relative;
+  right: 170px;
+  top: 160px;
+  transform: rotate(4deg);
+  -moz-transform: rotate(4deg); /* Для Firefox */
+  -ms-transform: rotate(4deg); /* Для IE */
+  -webkit-transform: rotate(4deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(4deg); /* Для Opera */
+}
+
+#ship-layout .transition {
+  transition: 1s;
+  -moz-transition: 1s; /* Для Firefox */
+  -ms-transition: 1s; /* Для IE */
+  -webkit-transition: 1s; /* Для Safari, Chrome, iOS */
+  -o-transition: 1s; /* Для Opera */
+}
+
+/* Gallery */
+
+#gallery {
+  background-color: var(--main-color);
+  max-width: 1200px;
+  margin: auto;
+}
+
+#gallery .gallery-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+#gallery .gallery-items img {
+  padding-bottom: 5px;
+}
+
+#gallery .gallery-items img:first-child {
+  padding-top: 10px;
+}
+
+#gallery .position-spare-parts {
+  position: relative;
+  bottom: 415px;
+}
+
+#gallery .gallery-img:hover {
+  box-shadow: 0 0 12px #333;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+/* 20: Contacts */
+#contacts {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  padding: 10px 70px;
+  position: relative;
+}
+
+#contacts h2 {
+  font-size: 50px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+#contacts .section-a .underline-1::after {
+  content: "";
+  background: url(../img/underlines-2/подчеркивание\ двойное.png) no-repeat
+    center center/cover;
+  height: 11px;
+  width: 145px;
+  top: 66px;
+  left: 15px;
+  position: absolute;
+}
+
+#contacts h3 {
+  font-size: 30px;
+  font-weight: 100;
+  letter-spacing: 0;
+  text-transform: capitalize;
+}
+
+#contacts .section-a {
+  margin-top: 20px;
+}
+
+#contacts .section-a > div > * {
+  font-family: molot;
+}
+
+#contacts .section-a > div p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  margin-top: 3px;
+}
+
+#contacts .section-a div:nth-child(2) {
+  margin-bottom: 40px;
+}
+
+#contacts .section-a div h3:nth-child(2) {
+  margin-bottom: 28px;
+}
+
+#contacts .section-a .logo-contacts {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+#contacts .section-a,
+.section-b,
+.section-c p {
+  font-size: 28px;
+}
+
+#contacts .section-b {
+  font-family: molot;
+}
+
+#contacts .position::selection {
+  background:#f2ea8c;
+}
+
+#contacts .section-b .technical i {
+  margin-left: 40px;
+}
+
+#contacts .section-b .navigation-safety i {
+  margin-left: 160px;
+}
+
+#contacts .section-b .assistant i {
+  margin-left: 4px;
+}
+
+#contacts .section-b .accountant i {
+  margin-left: 80px;
+}
+
+#contacts .section-b .accountant {
+  margin-left: 190px;
+}
+
+#contacts .section-b .technical::after {
+  content: "";
+  background: url(../img/underlines-2/Подчеркивания\ 01.png) no-repeat center
+    center/cover;
+  height: 6px;
+  width: 320px;
+  top: 135px;
+  left: 70px;
+  position: absolute;
+}
+
+#contacts .section-b .navigation-safety::after {
+  content: "";
+  background: url(../img/underlines-2/Подчеркивания\ 01.png) no-repeat center
+    center/cover;
+  height: 6px;
+  width: 320px;
+  top: 325px;
+  left: 70px;
+  position: absolute;
+}
+
+#contacts .section-b .assistant::after {
+  content: "";
+  background: url(../img/underlines-2/Подчеркивания\ 01.png) no-repeat center
+    center/cover;
+  height: 6px;
+  width: 360px;
+  top: 485px;
+  left: 70px;
+  position: absolute;
+}
+
+#contacts .section-b .accountant::after {
+  content: "";
+  background: url(../img/underlines-2/Подчеркивания\ 01.png) no-repeat center
+    center/cover;
+  height: 5px;
+  width: 130px;
+  top: 642px;
+  left: 180px;
+  position: absolute;
+}
+
+#contacts .section-b > div {
+  margin-bottom: 124px;
+  margin-left: 70px;
+}
+
+#contacts .section-b > div:first-child {
+  margin-top: 95px;
+}
+
+#contacts .section-b > div:nth-child(4) {
+  margin-bottom: 140px;
+}
+
+#contacts .section-c div {
+  font-family: molot;
+  text-align: center;
+}
+
+#contacts .section-b .sponsor {
+  margin-left: 40px;
+}
+
+#contacts .section-c .name-mail-1 {
+  margin-top: 88px;
+}
+
+#contacts .section-c .name-mail-2 {
+  margin-top: 143px;
+}
+
+#contacts .section-c .name-mail-3 {
+  margin-top: 95px;
+}
+
+#contacts .section-c .name-mail-4 {
+  margin-top: 95px;
+}
+
+#contacts .anim:hover {
+  background-color: #f2ea8c;
+  transition: 2s;
+}
+
+/* Main Footer */
+#main-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
