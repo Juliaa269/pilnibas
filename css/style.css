@@ -232,25 +232,53 @@ img {
 
 #showcase .title {
   transform: translate(0px, 120%);
+    -moz-transform: translate(0px, 120%); /* Для Firefox */
+    -ms-transform: translate(0px, 120%); /* Для IE */
+    -webkit-transform: translate(0px, 120%); /* Для Safari, Chrome, iOS */
+    -o-transform: translate(0px, 120%); /* Для Opera */
   opacity: 0;
   transition: all 1s ease 0s;
+    -webkit-transition: all 1s ease 0s;
+    -moz-transition: all 1s ease 0s;
+    -o-transition: all 1s ease 0s;
+    -ms-transition: all 1s ease 0s;
 }
 
 #showcase .title.active {
   transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px); /* Для Firefox */
+    -ms-transform: translate(0px, 0px); /* Для IE */
+    -webkit-transform: translate(0px, 0px); /* Для Safari, Chrome, iOS */
+    -o-transform: translate(0px, 0px); /* Для Opera */
   opacity: 1;
 }
 
 #showcase .subtitle {
   transform: translate(0px, 150%);
+    -moz-transform: translate(0px, 150%); /* Для Firefox */
+    -ms-transform: translate(0px, 150%); /* Для IE */
+    -webkit-transform: translate(0px, 150%); /* Для Safari, Chrome, iOS */
+    -o-transform: translate(0px, 150%); /* Для Opera */
   opacity: 0;
   transition: all 1s ease 0s;
+    -webkit-transition: all 1s ease 0s;
+    -moz-transition: all 1s ease 0s;
+    -o-transition: all 1s ease 0s;
+    -ms-transition: all 1s ease 0s;
 }
 
 #showcase .subtitle.active {
   transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px); /* Для Firefox */
+    -ms-transform: translate(0px, 0px); /* Для IE */
+    -webkit-transform: translate(0px, 0px); /* Для Safari, Chrome, iOS */
+    -o-transform: translate(0px, 0px); /* Для Opera */
   opacity: 1;
   transition: all .8s ease 0.4s;
+    -webkit-transition: all .8s ease 0.4s;
+    -moz-transition: all .8s ease 0.4s;
+    -o-transition: all .8s ease 0.4s;
+    -ms-transition: all .8s ease 0.4s;
 }
 
 #showcase .border-bottom {
@@ -421,13 +449,25 @@ h3 {
 
 .anim-show {
   transform: translate(0px, 120%);
+    -moz-transform: translate(0px, 120%); /* Для Firefox */
+    -ms-transform: translate(0px, 120%); /* Для IE */
+    -webkit-transform: translate(0px, 120%); /* Для Safari, Chrome, iOS */
+    -o-transform: translate(0px, 120%); /* Для Opera */
   opacity: 0;
   transition: all 0.8s ease 0s;
+    -webkit-transition: all 0.8s ease 0s;
+    -moz-transition: all 0.8s ease 0s;
+    -o-transition: all 0.8s ease 0s;
+    -ms-transition: all 0.8s ease 0s;
 }
 
 .anim-show.active,
 .active .anim-show {
   transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px); /* Для Firefox */
+    -ms-transform: translate(0px, 0px); /* Для IE */
+    -webkit-transform: translate(0px, 0px); /* Для Safari, Chrome, iOS */
+    -o-transform: translate(0px, 0px); /* Для Opera */
   opacity: 1;
 }
 
@@ -461,6 +501,10 @@ h3 {
   position: relative;
   bottom: -1.25px;
   transform: rotate(30deg);
+    -moz-transform: rotate(30deg); /* Для Firefox */
+    -ms-transform: rotate(30deg); /* Для IE */
+    -webkit-transform: rotate(30deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(30deg); /* Для Opera */
   left: 4px;
 }
 
@@ -517,8 +561,15 @@ h3 {
 
 #ship-layout .animation:hover {
   transform: none;
-  -webkit-transform: none;
+    -moz-transform: none; /* Для Firefox */
+    -ms-transform: none; /* Для IE */
+    -webkit-transform: none; /* Для Safari, Chrome, iOS */
+    -o-transform: none; /* Для Opera */
   transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
   box-shadow: 0 0 12px #333;
   cursor: pointer;
 }
@@ -832,16 +883,24 @@ a.scroll-contacts-section {
 
 a.scroll {
   position: relative;
-  bottom: 700px;
+  bottom: 480px;
 }
 
 #gallery .gallery-img {
   transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    -ms-transition: 1s;
 }
 
 #gallery .gallery-img:hover {
   box-shadow: 0 0 12px #333;
   transform: scale(1.05);
+    -moz-transform: scale(1.05); /* Для Firefox */
+    -ms-transform: scale(1.05); /* Для IE */
+    -webkit-transform: scale(1.05); /* Для Safari, Chrome, iOS */
+    -o-transform: scale(1.05); /* Для Opera */
 }
 
 
@@ -849,7 +908,7 @@ a.scroll {
 #contacts {
   display: grid;
   grid-template-columns: 1fr 1.5fr 1fr;
-  padding: 20px 70px;
+  padding: 25px 70px;
   position: relative;
 }
 
@@ -872,23 +931,47 @@ a.scroll {
 
 #contacts .contacts-section {
   transform: translate(-120%, 0px);
+    -moz-transform: translate(-120%, 0px); /* Для Firefox */
+    -ms-transform: translate(-120%, 0px); /* Для IE */
+    -webkit-transform: translate(-120%, 0px); /* Для Safari, Chrome, iOS */
+    -o-transform: translate(-120%, 0px); /* Для Opera */
   transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
 }
 
 #contacts.active .contacts-section {
   transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px); /* Для Firefox */
+    -ms-transform: translate(0px, 0px); /* Для IE */
+    -webkit-transform: translate(0px, 0px); /* Для Safari, Chrome, iOS */
+    -o-transform: translate(0px, 0px); /* Для Opera */
 }
 
 #contacts.active .contacts-section:nth-child(1) {
   transition: all 0.8s ease 1.2s;
+    -webkit-transition: all 0.8s ease 1.2s;
+    -moz-transition: all 0.8s ease 1.2s;
+    -o-transition: all 0.8s ease 1.2s;
+    -ms-transition: all 0.8s ease 1.2s;
 }
 
 #contacts.active .contacts-section:nth-child(2) {
   transition: all 0.8s ease 0.8s;
+    -webkit-transition: all 0.8s ease 0.8s;
+    -moz-transition: all 0.8s ease 0.8s;
+    -o-transition: all 0.8s ease 0.8s;
+    -ms-transition: all 0.8s ease 0.8s;
 }
 
 #contacts.active .contacts-section:nth-child(3) {
   transition: all 0.8s ease 0.4s;
+    -webkit-transition: all 0.8s ease 0.4s;
+    -moz-transition: all 0.8s ease 0.4s;
+    -o-transition: all 0.8s ease 0.4s;
+    -ms-transition: all 0.8s ease 0.4s;
 }
 
 #contacts h3 {
@@ -940,19 +1023,20 @@ a.scroll {
 }
 
 #contacts .section-b .technical i {
-  margin-left: 40px;
+  margin-left: 360px;
 }
 
 #contacts .section-b .navigation-safety i {
-  margin-left: 160px;
+  margin-left: 360px;
+  margin-top: 25px;
 }
 
 #contacts .section-b .assistant i {
-  margin-left: 4px;
+  margin-left: 360px;
 }
 
 #contacts .section-b .accountant i {
-  margin-left: 80px;
+  margin-left: 240px;
 }
 
 #contacts .section-b .accountant {
@@ -965,8 +1049,8 @@ a.scroll {
     center/cover;
   height: 6px;
   width: 320px;
-  top: 125px;
-  left: 70px;
+  top: 27px;
+  left: 0px;
   position: absolute;
 }
 
@@ -976,8 +1060,8 @@ a.scroll {
     center/cover;
   height: 6px;
   width: 320px;
-  top: 315px;
-  left: 70px;
+  top: 55px;
+  left: -5px;
   position: absolute;
 }
 
@@ -987,8 +1071,8 @@ a.scroll {
     center/cover;
   height: 6px;
   width: 360px;
-  top: 470px;
-  left: 70px;
+  top: 27px;
+  left: 0px;
   position: absolute;
 }
 
@@ -998,8 +1082,8 @@ a.scroll {
     center/cover;
   height: 5px;
   width: 130px;
-  top: 630px;
-  left: 190px;
+  top: 27px;
+  left: 0px;
   position: absolute;
 }
 
@@ -1030,7 +1114,7 @@ a.scroll {
 }
 
 #contacts .section-c .name-mail-2 {
-  margin-top: 143px;
+  margin-top: 130px;
 }
 
 #contacts .section-c .name-mail-3 {
@@ -1041,9 +1125,89 @@ a.scroll {
   margin-top: 95px;
 }
 
-#contacts .anim:hover {
+#contacts .technical {
+  background: none;
+  cursor: pointer;
+  display: inline-block;
+  height: 30px;
+  width: 315px;
+  position: relative;
+  z-index:1;
+}
+
+#contacts .navigation-safety {
+  background: none;
+  cursor: pointer;
+  display: inline-block;
+  height: 60px;
+  width: 285px;
+  position: relative;
+  z-index:1;
+}
+
+#contacts .assistant {
+  background: none;
+  cursor: pointer;
+  display: inline-block;
+  height: 30px;
+  width: 350px;
+  position: relative;
+  z-index:1;
+}
+
+#contacts .accountant {
+  background: none;
+  cursor: pointer;
+  display: inline-block;
+  height: 30px;
+  width: 120px;
+  position: relative;
+  z-index:1;
+}
+
+#contacts .number {
+  background: none;
+  cursor: pointer;
+  display: inline-block;
+  height: 30px;
+  width: 185px;
+  position: relative;
+  z-index:1;
+  top: 5px;
+}
+
+#contacts .mail {
+  background: none;
+  cursor: pointer;
+  display: inline-block;
+  height: 30px;
+  width: 250px;
+  position: relative;
+  z-index:1;
+}
+
+#contacts span {
+  position:absolute;
+}
+
+#contacts .paragraph:hover::before {
+  width: 100%;
+}
+
+#contacts .paragraph::before {
+  transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+  transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+  content: '';
+  z-index:0;
+  position: absolute; 
+  height: 100%; width: 0;
   background-color: #f2ea8c;
-  transition: 2s;
 }
 
 /* Main Footer */
