@@ -16,17 +16,41 @@ $(document).ready(function(){
     });
 });
 
-AOS.init({
-  // Global settings:
-  disable: 'phone, tablet', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-  initClassName: 'aos-init', // class applied after initialization
-  animatedClassName: 'aos-animate', // class applied on animation
-  
-  offset: 100, // offset (in px) from the original trigger point
-  delay: 500, // values from 0 to 3000, with step 50ms
-  duration: 3000, // values from 0 to 3000, with step 50ms
-  easing: 'ease', // default easing for AOS animations
-  once: false, // whether animation should happen only once - while scrolling down
-  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-});
+let animItems = document.querySelectorAll('.anim-items');
+
+if(animItems.length > 0) {
+  window.addEventListener('scroll', animOnScroll);
+  function animOnScroll(){
+    for(let i = 0; i < animItems.length; i++) {
+      const animItem = animItems[i];
+      const animItemHeight = animItem.offsetHeight;
+      const animItemOffset = offset(animItem).top;
+      const animStart = 4;
+
+      let animItemPoint = window.innerHeight - animItemHeight / animStart;
+
+      if (animItemHeight > window.innerHeight) {
+        animItemPoint = window.innerHeight - window.innerHeight / animStart;
+      }
+
+      if((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
+        animItem.classList.add('active');
+      } else {
+        if(!animItem.classList.contains('anim-no-hide')) {
+          animItem.classList.remove('active');
+        }
+      }
+    }
+  }
+  function offset(el) {
+    const rect = el.getBoundingClientRect(),
+      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    return {
+      top: rect.top + scrollTop, left: rect.left + scrollLeft
+    }
+  }
+  setTimeout(() => {
+    animOnScroll();
+  }, 300);
+}

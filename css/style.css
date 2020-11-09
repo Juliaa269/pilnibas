@@ -230,6 +230,29 @@ img {
   font-weight: 900;
 }
 
+#showcase .title {
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 1s ease 0s;
+}
+
+#showcase .title.active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+#showcase .subtitle {
+  transform: translate(0px, 150%);
+  opacity: 0;
+  transition: all 1s ease 0s;
+}
+
+#showcase .subtitle.active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all .8s ease 0.4s;
+}
+
 #showcase .border-bottom {
   width: 300px;
   border-bottom: 8px solid var(--main-color);
@@ -267,6 +290,7 @@ h3 {
   font-size: 28px;
   font-weight: 100;
   line-height: 1.25;
+  overflow: hidden;
 }
 
 #leverans-baltic-introduction .item1 {
@@ -393,6 +417,18 @@ h3 {
   margin-top: 20px;
   position: relative;
   bottom: 20px;
+}
+
+.anim-show {
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.anim-show.active,
+.active .anim-show {
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 /* Slide-Footer */
@@ -796,7 +832,7 @@ a.scroll-contacts-section {
 
 a.scroll {
   position: relative;
-  bottom: 250px;
+  bottom: 700px;
 }
 
 #gallery .gallery-img {
@@ -805,8 +841,7 @@ a.scroll {
 
 #gallery .gallery-img:hover {
   box-shadow: 0 0 12px #333;
-  box-shadow: 0 0 12px red;
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 
 
@@ -814,7 +849,7 @@ a.scroll {
 #contacts {
   display: grid;
   grid-template-columns: 1fr 1.5fr 1fr;
-  padding: 10px 70px;
+  padding: 20px 70px;
   position: relative;
 }
 
@@ -830,9 +865,30 @@ a.scroll {
     center center/cover;
   height: 11px;
   width: 145px;
-  top: 66px;
+  top: 56px;
   left: 15px;
   position: absolute;
+}
+
+#contacts .contacts-section {
+  transform: translate(-120%, 0px);
+  transition: all 0.3s ease 0s;
+}
+
+#contacts.active .contacts-section {
+  transform: translate(0px, 0px);
+}
+
+#contacts.active .contacts-section:nth-child(1) {
+  transition: all 0.8s ease 1.2s;
+}
+
+#contacts.active .contacts-section:nth-child(2) {
+  transition: all 0.8s ease 0.8s;
+}
+
+#contacts.active .contacts-section:nth-child(3) {
+  transition: all 0.8s ease 0.4s;
 }
 
 #contacts h3 {
@@ -909,7 +965,7 @@ a.scroll {
     center/cover;
   height: 6px;
   width: 320px;
-  top: 135px;
+  top: 125px;
   left: 70px;
   position: absolute;
 }
@@ -920,7 +976,7 @@ a.scroll {
     center/cover;
   height: 6px;
   width: 320px;
-  top: 325px;
+  top: 315px;
   left: 70px;
   position: absolute;
 }
@@ -931,7 +987,7 @@ a.scroll {
     center/cover;
   height: 6px;
   width: 360px;
-  top: 485px;
+  top: 470px;
   left: 70px;
   position: absolute;
 }
@@ -942,8 +998,8 @@ a.scroll {
     center/cover;
   height: 5px;
   width: 130px;
-  top: 642px;
-  left: 180px;
+  top: 630px;
+  left: 190px;
   position: absolute;
 }
 
