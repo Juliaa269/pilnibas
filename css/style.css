@@ -231,11 +231,11 @@ img {
 }
 
 #showcase .title {
-  transform: translate(0px, 120%);
-    -moz-transform: translate(0px, 120%); /* Для Firefox */
-    -ms-transform: translate(0px, 120%); /* Для IE */
-    -webkit-transform: translate(0px, 120%); /* Для Safari, Chrome, iOS */
-    -o-transform: translate(0px, 120%); /* Для Opera */
+  transform: translateY(0px);
+    -moz-transform: translateY(0px); /* Для Firefox */
+    -ms-transform: translateY(0px); /* Для IE */
+    -webkit-transform: translateY(0px); /* Для Safari, Chrome, iOS */
+    -o-transform: translateY(0px); /* Для Opera */
   opacity: 0;
   transition: all 1s ease 0s;
     -webkit-transition: all 1s ease 0s;
@@ -245,20 +245,20 @@ img {
 }
 
 #showcase .title.active {
-  transform: translate(0px, 0px);
-    -moz-transform: translate(0px, 0px); /* Для Firefox */
-    -ms-transform: translate(0px, 0px); /* Для IE */
-    -webkit-transform: translate(0px, 0px); /* Для Safari, Chrome, iOS */
-    -o-transform: translate(0px, 0px); /* Для Opera */
+  transform: translateY(0px);
+    -moz-transform: translateY(0px); /* Для Firefox */
+    -ms-transform: translateY(0px); /* Для IE */
+    -webkit-transform: translateY(0px); /* Для Safari, Chrome, iOS */
+    -o-transform: translateY(0px); /* Для Opera */
   opacity: 1;
 }
 
 #showcase .subtitle {
-  transform: translate(0px, 150%);
-    -moz-transform: translate(0px, 150%); /* Для Firefox */
-    -ms-transform: translate(0px, 150%); /* Для IE */
-    -webkit-transform: translate(0px, 150%); /* Для Safari, Chrome, iOS */
-    -o-transform: translate(0px, 150%); /* Для Opera */
+  transform: translateY(0px);
+    -moz-transform: translateY(0px); /* Для Firefox */
+    -ms-transform: translateY(0px); /* Для IE */
+    -webkit-transform: translateY(0px); /* Для Safari, Chrome, iOS */
+    -o-transform: translateY(0px); /* Для Opera */
   opacity: 0;
   transition: all 1s ease 0s;
     -webkit-transition: all 1s ease 0s;
@@ -268,11 +268,11 @@ img {
 }
 
 #showcase .subtitle.active {
-  transform: translate(0px, 0px);
-    -moz-transform: translate(0px, 0px); /* Для Firefox */
-    -ms-transform: translate(0px, 0px); /* Для IE */
-    -webkit-transform: translate(0px, 0px); /* Для Safari, Chrome, iOS */
-    -o-transform: translate(0px, 0px); /* Для Opera */
+  transform: translateY(0px);
+    -moz-transform: translateY(0px); /* Для Firefox */
+    -ms-transform: translateY(0px); /* Для IE */
+    -webkit-transform: translateY(0px); /* Для Safari, Chrome, iOS */
+    -o-transform: translateY(0px); /* Для Opera */
   opacity: 1;
   transition: all .8s ease 0.4s;
     -webkit-transition: all .8s ease 0.4s;
@@ -448,11 +448,11 @@ h3 {
 }
 
 .anim-show {
-  transform: translate(0px, 120%);
-    -moz-transform: translate(0px, 120%); /* Для Firefox */
-    -ms-transform: translate(0px, 120%); /* Для IE */
-    -webkit-transform: translate(0px, 120%); /* Для Safari, Chrome, iOS */
-    -o-transform: translate(0px, 120%); /* Для Opera */
+  transform: translateY(0px);
+    -moz-transform: translateY(0px); /* Для Firefox */
+    -ms-transform: translateY(0px); /* Для IE */
+    -webkit-transform: translateY(0px); /* Для Safari, Chrome, iOS */
+    -o-transform: translateY(0px);/* Для Opera */
   opacity: 0;
   transition: all 0.8s ease 0s;
     -webkit-transition: all 0.8s ease 0s;
@@ -463,11 +463,11 @@ h3 {
 
 .anim-show.active,
 .active .anim-show {
-  transform: translate(0px, 0px);
-    -moz-transform: translate(0px, 0px); /* Для Firefox */
-    -ms-transform: translate(0px, 0px); /* Для IE */
-    -webkit-transform: translate(0px, 0px); /* Для Safari, Chrome, iOS */
-    -o-transform: translate(0px, 0px); /* Для Opera */
+  transform: translateY(0px);
+    -moz-transform: translateY(0px); /* Для Firefox */
+    -ms-transform: translateY(0px); /* Для IE */
+    -webkit-transform: translateY(0px); /* Для Safari, Chrome, iOS */
+    -o-transform: translateY(0px); /* Для Opera */
   opacity: 1;
 }
 
@@ -550,7 +550,6 @@ h3 {
 #ship-layout .ship-background #eyewink {
   -webkit-animation: eyewink 3s infinite reverse ease-in-out;
   animation: eyewink 3s infinite reverse ease-in-out;
-  /* opacity: 1; */
 }
 
 @keyframes eyewink {
@@ -903,6 +902,10 @@ a.scroll {
     -o-transform: scale(1.05); /* Для Opera */
 }
 
+/* #gallery .anim-items {
+  contain: paint;
+} */
+
 
 /* 20: Contacts */
 #contacts {
@@ -930,48 +933,49 @@ a.scroll {
 }
 
 #contacts .contacts-section {
-  transform: translate(-120%, 0px);
-    -moz-transform: translate(-120%, 0px); /* Для Firefox */
-    -ms-transform: translate(-120%, 0px); /* Для IE */
-    -webkit-transform: translate(-120%, 0px); /* Для Safari, Chrome, iOS */
-    -o-transform: translate(-120%, 0px); /* Для Opera */
-  transition: all 0.3s ease 0s;
-    -webkit-transition: all 0.3s ease 0s;
-    -moz-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    -ms-transition: all 0.3s ease 0s;
+  /* contain: paint; */
+  transform: translateX(0px);
+    -moz-transform: translateX(0px); /* Для Firefox */
+    -ms-transform: translateX(0px); /* Для IE */
+    -webkit-transform: translateX(0px); /* Для Safari, Chrome, iOS */
+    -o-transform: translateX(0px); /* Для Opera */
+  transition: 0.3s ease 0s;
+    -webkit-transition: 0.3s ease 0s;
+    -moz-transition: 0.3s ease 0s;
+    -o-transition: 0.3s ease 0s;
+    -ms-transition: 0.3s ease 0s;
 }
 
 #contacts.active .contacts-section {
-  transform: translate(0px, 0px);
-  -moz-transform: translate(0px, 0px); /* Для Firefox */
-    -ms-transform: translate(0px, 0px); /* Для IE */
-    -webkit-transform: translate(0px, 0px); /* Для Safari, Chrome, iOS */
-    -o-transform: translate(0px, 0px); /* Для Opera */
+  transform: translateX(0px);
+  -moz-transform: translateX(0px); /* Для Firefox */
+    -ms-transform: translateX(0px); /* Для IE */
+    -webkit-transform: translateX(0px); /* Для Safari, Chrome, iOS */
+    -o-transform: translateX(0px); /* Для Opera */
 }
 
 #contacts.active .contacts-section:nth-child(1) {
-  transition: all 0.8s ease 1.2s;
-    -webkit-transition: all 0.8s ease 1.2s;
-    -moz-transition: all 0.8s ease 1.2s;
-    -o-transition: all 0.8s ease 1.2s;
-    -ms-transition: all 0.8s ease 1.2s;
+  transition: 0.8s ease 1.2s;
+    -webkit-transition: 0.8s ease 1.2s;
+    -moz-transition: 0.8s ease 1.2s;
+    -o-transition: 0.8s ease 1.2s;
+    -ms-transition: 0.8s ease 1.2s;
 }
 
 #contacts.active .contacts-section:nth-child(2) {
-  transition: all 0.8s ease 0.8s;
-    -webkit-transition: all 0.8s ease 0.8s;
-    -moz-transition: all 0.8s ease 0.8s;
-    -o-transition: all 0.8s ease 0.8s;
-    -ms-transition: all 0.8s ease 0.8s;
+  transition: 0.8s ease 0.8s;
+    -webkit-transition: 0.8s ease 0.8s;
+    -moz-transition: 0.8s ease 0.8s;
+    -o-transition: 0.8s ease 0.8s;
+    -ms-transition: 0.8s ease 0.8s;
 }
 
 #contacts.active .contacts-section:nth-child(3) {
-  transition: all 0.8s ease 0.4s;
-    -webkit-transition: all 0.8s ease 0.4s;
-    -moz-transition: all 0.8s ease 0.4s;
-    -o-transition: all 0.8s ease 0.4s;
-    -ms-transition: all 0.8s ease 0.4s;
+  transition: 0.8s ease 0.4s;
+    -webkit-transition: 0.8s ease 0.4s;
+    -moz-transition: 0.8s ease 0.4s;
+    -o-transition: 0.8s ease 0.4s;
+    -ms-transition: 0.8s ease 0.4s;
 }
 
 #contacts h3 {
