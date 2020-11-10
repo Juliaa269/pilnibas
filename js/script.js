@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    $('a[href^="#"]').click(function(){
+    $('a[href^="#"]').click(function(e){
+      e.preventDefault();
       if(document.getElementById($(this).attr('href').substr(1)) != null) { 
          $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 2000);
       }     
@@ -7,7 +8,8 @@ $(document).ready(function(){
     });
 });
 $(document).ready(function(){
-    $('a[href^="#"]').click(function(){ 
+    $('a[href^="#"]').click(function(e){ 
+      e.preventDefault();
       var $element = $('a[name=' + $(this).attr('href').substr(1) + ']');
       if($element.length == 1) { 
          $('html, body').animate({ scrollTop: $element.offset().top }, 2000); 
