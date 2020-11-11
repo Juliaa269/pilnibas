@@ -88,7 +88,7 @@ img {
   background: rgba(1, 64, 105, 0.8);
   color: #ddd;
   height: 60px;
-  z-index: 10;
+  z-index: 20;
   position: fixed;
   width: 100%;
   top: 0;
@@ -469,6 +469,7 @@ h3 {
     -webkit-transform: translateY(0px); /* Для Safari, Chrome, iOS */
     -o-transform: translateY(0px); /* Для Opera */
   opacity: 1;
+  display: inline;
 }
 
 /* Slide-Footer */
@@ -891,21 +892,23 @@ a.scroll {
     -moz-transition: 1s;
     -o-transition: 1s;
     -ms-transition: 1s;
+    
 }
 
 #gallery .gallery-img:hover {
-  box-shadow: 0 0 12px #333;
-  transform: scale(1.05);
-    -moz-transform: scale(1.05); /* Для Firefox */
-    -ms-transform: scale(1.05); /* Для IE */
-    -webkit-transform: scale(1.05); /* Для Safari, Chrome, iOS */
-    -o-transform: scale(1.05); /* Для Opera */
+  box-shadow: 0 0 12px 10px #333;
+  -webkit-box-shadow: 0 0 10px #333;
+  -moz-box-shadow: 0 0 10px #333;
+  filter: progid:DXImageTransform.Microsoft.shadow(direction=120, color=#333, strength=20);
+  /* box-shadow: 0 0 12px 10px red; */
+  transform: scale(1.06);
+    -moz-transform: scale(1.06); /* Для Firefox */
+    -ms-transform: scale(1.06); /* Для IE */
+    -webkit-transform: scale(1.06); /* Для Safari, Chrome, iOS */
+    -o-transform: scale(1.06); /* Для Opera */
+    z-index: 10;
+    position: relative;
 }
-
-/* #gallery .anim-items {
-  contain: paint;
-} */
-
 
 /* 20: Contacts */
 #contacts {

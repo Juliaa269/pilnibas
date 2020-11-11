@@ -1,26 +1,12 @@
-// window.onload = function(){
-//   document.body.scrollTop = 0;
-// }
-
 $(document).ready(function(){
   $('a[href^="#"]').click(function(e){
     e.preventDefault();
     if(document.getElementById($(this).attr('href').substr(1)) != null) { 
-       $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 2000);
+       $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 3000);
     }     
     return false;
   });
 });
-// $(document).ready(function(){
-//     $('a[href^="#"]').click(function(e){ 
-//       e.preventDefault();
-//       var $element = $('a[name=' + $(this).attr('href').substr(1) + ']');
-//       if($element.length == 1) { 
-//          $('html, body').animate({ scrollTop: $element.offset().top }, 2000); 
-//       }     
-//       return false;
-//     });
-// });
 
 
 
