@@ -8,8 +8,6 @@ $(document).ready(function(){
   });
 });
 
-
-
 //////////////////////////////////////////////////////
 
 let animItems = document.querySelectorAll('.anim-items');

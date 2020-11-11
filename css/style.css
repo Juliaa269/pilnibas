@@ -73,15 +73,10 @@ img {
   background-color: #fff;
 }
 
-.promo-bg {
-  background: url(../img/other/1st-slide-bg.jpg) no-repeat center center/cover;
-  background-color: #fff;
-}
-
 /* Navbar */
 #hero {
-  font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: 0;
+  font-family: magistral;
+  letter-spacing: 1px;
 }
 
 #navbar {
@@ -127,6 +122,7 @@ img {
 #navbar .nav-container a {
   color: #ddd;
   padding: 25px 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #navbar .nav-container a:hover,
@@ -194,20 +190,19 @@ img {
 /* Showcase background */
 #hero {
   background: #333;
-  height: 100vh;
   position: relative;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
 }
 
-#hero::before {
-  content: "";
-  background: url("../img/other/photo_2020-10-27_11-21-06.jpg") no-repeat center
-    center/cover;
+#my-video {
   position: absolute;
-  height: inherit;
   top: 0;
   left: 0;
-  width: 100%;
-  opacity: 0.5;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
 }
 
 /* Showcase */
@@ -901,11 +896,11 @@ a.scroll {
   -moz-box-shadow: 0 0 10px #333;
   filter: progid:DXImageTransform.Microsoft.shadow(direction=120, color=#333, strength=20);
   /* box-shadow: 0 0 12px 10px red; */
-  transform: scale(1.06);
-    -moz-transform: scale(1.06); /* Для Firefox */
-    -ms-transform: scale(1.06); /* Для IE */
-    -webkit-transform: scale(1.06); /* Для Safari, Chrome, iOS */
-    -o-transform: scale(1.06); /* Для Opera */
+  transform: scale(1.04);
+    -moz-transform: scale(1.04); /* Для Firefox */
+    -ms-transform: scale(1.04); /* Для IE */
+    -webkit-transform: scale(1.04); /* Для Safari, Chrome, iOS */
+    -o-transform: scale(1.04); /* Для Opera */
     z-index: 10;
     position: relative;
 }
