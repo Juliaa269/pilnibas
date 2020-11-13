@@ -337,7 +337,7 @@ h3 {
   height: 9px;
   width: 45px;
   top: 26px;
-  left: 445px;
+  left: 423px;
   position: absolute;
 }
 
@@ -853,10 +853,6 @@ h3 {
 
 #gallery .gallery-items img {
   margin-bottom: 5px;
-}
-
-#gallery .gallery-items img:first-child {
-  padding-top: 10px;
 }
 
 /* scroll */
