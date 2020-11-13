@@ -325,9 +325,9 @@ h3 {
   content: "";
   background: url(../img/underlines/line1.png) no-repeat center center/cover;
   height: 5px;
-  width: 190px;
-  top: 28px;
-  left: 230px;
+  width: 135px;
+  top: 25px;
+  left: 270px;
   position: absolute;
 }
 
@@ -337,7 +337,7 @@ h3 {
   height: 9px;
   width: 45px;
   top: 26px;
-  left: 460px;
+  left: 445px;
   position: absolute;
 }
 
@@ -908,8 +908,8 @@ a.scroll {
 /* 20: Contacts */
 #contacts {
   display: grid;
-  grid-template-columns: 1fr 1.5fr 1fr;
-  padding: 25px 70px;
+  grid-template-columns: 1fr 1.8fr 1fr;
+  padding: 20px 60px;
   position: relative;
 }
 
@@ -931,7 +931,6 @@ a.scroll {
 }
 
 #contacts .contacts-section {
-  /* contain: paint; */
   transform: translateX(0px);
     -moz-transform: translateX(0px); /* Для Firefox */
     -ms-transform: translateX(0px); /* Для IE */
@@ -991,10 +990,14 @@ a.scroll {
   font-family: molot;
 }
 
-#contacts .section-a > div p {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 25px;
-  margin-top: 3px;
+#contacts .section-a .email {
+  position: relative;
+  top: 35px;
+}
+
+#contacts .section-a .email a:hover {
+  text-decoration: underline;
+  color: var(--main-color);
 }
 
 #contacts .section-a div:nth-child(2) {
@@ -1020,32 +1023,34 @@ a.scroll {
   font-family: molot;
 }
 
-#contacts .position::selection {
-  background:#f2ea8c;
-}
-
 #contacts .section-b .technical i {
-  margin-left: 360px;
+  margin-left: 364px;
+  margin-top: 3px;
 }
 
 #contacts .section-b .navigation-safety i {
-  margin-left: 360px;
-  margin-top: 25px;
+  margin-left: 350px;
+  margin-top: 24px;
 }
 
 #contacts .section-b .assistant i {
-  margin-left: 360px;
+  position: relative;
+  left: 150px;
+  top: -15px;
 }
 
 #contacts .section-b .accountant i {
-  margin-left: 240px;
+  margin-left: 270px;
+  position: relative;
+  bottom: 3px;
 }
 
-#contacts .section-b .accountant {
-  margin-left: 190px;
+#contacts .section-b .assistant .department {
+  position: relative;
+  left: 7px;
 }
 
-#contacts .section-b .technical::after {
+/* #contacts .section-b .technical::after {
   content: "";
   background: url(../img/underlines-2/Подчеркивания\ 01.png) no-repeat center
     center/cover;
@@ -1072,9 +1077,9 @@ a.scroll {
   background: url(../img/underlines-2/Подчеркивания\ 01.png) no-repeat center
     center/cover;
   height: 6px;
-  width: 360px;
-  top: 27px;
-  left: 0px;
+  width: 240px;
+  top: 57px;
+  left: 55px;
   position: absolute;
 }
 
@@ -1087,7 +1092,7 @@ a.scroll {
   top: 27px;
   left: 0px;
   position: absolute;
-}
+} */
 
 #contacts .section-b > div {
   margin-bottom: 124px;
@@ -1111,20 +1116,65 @@ a.scroll {
   margin-left: 40px;
 }
 
+#contacts .section-b .sponsor a:hover {
+  text-decoration: underline;
+  color: var(--main-color);
+}
+
+#contacts .section-c .name-mail-1 p:last-child,
+#contacts .section-c .name-mail-2 p:last-child,
+#contacts .section-c .name-mail-3 p:last-child,
+#contacts .section-c .name-mail-4 p:last-child,
+#contacts .section-c a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  letter-spacing: 0;
+}
+
+#contacts .section-c a:hover {
+  text-decoration: underline;
+  color: var(--main-color);
+}
+
 #contacts .section-c .name-mail-1 {
-  margin-top: 88px;
+  margin-top: 45px;
 }
 
 #contacts .section-c .name-mail-2 {
-  margin-top: 130px;
+  margin-top: 55px;
 }
 
 #contacts .section-c .name-mail-3 {
-  margin-top: 95px;
+  margin-top: 55px;
 }
 
 #contacts .section-c .name-mail-4 {
-  margin-top: 95px;
+  margin-top: 35px;
+}
+
+#contacts .section-c .section-c-emails {
+  position: relative;
+  right: 17px;
+}
+
+#contacts .section-c:last-child .section-c-emails {
+  position: relative;
+  right: 25px;
+}
+
+#contacts .section-c .section-c-names {
+  position: relative;
+  right: 15px;
+}
+
+#contacts .section-c:last-child .section-c-names {
+  position: relative;
+  right: 10px;
+}
+
+#contacts .section-c .section-c-phones {
+  position: relative;
+  right: 10px;
 }
 
 #contacts .technical {
@@ -1135,6 +1185,7 @@ a.scroll {
   width: 315px;
   position: relative;
   z-index:1;
+  right: 15px;
 }
 
 #contacts .navigation-safety {
@@ -1151,10 +1202,14 @@ a.scroll {
   background: none;
   cursor: pointer;
   display: inline-block;
-  height: 30px;
-  width: 350px;
+  height: 60px;
+  width: 230px;
   position: relative;
-  z-index:1;
+  z-index: 1;
+}
+
+#contacts .assistant span {
+  position: relative;
 }
 
 #contacts .accountant {
@@ -1162,12 +1217,14 @@ a.scroll {
   cursor: pointer;
   display: inline-block;
   height: 30px;
-  width: 120px;
+  width: 123px;
   position: relative;
   z-index:1;
 }
 
-#contacts .number {
+#contacts .section-a .number {
+  font-size: 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: none;
   cursor: pointer;
   display: inline-block;
@@ -1175,16 +1232,55 @@ a.scroll {
   width: 185px;
   position: relative;
   z-index:1;
-  top: 5px;
+  padding-top: 5px;
 }
 
-#contacts .mail {
+#contacts .main-ph-numb {
+  position: relative;
+  top: 10px;
+}
+
+#contacts .main-mail {
   background: none;
   cursor: pointer;
   display: inline-block;
   height: 30px;
-  width: 250px;
+  width: 215px;
   position: relative;
+  z-index:1;
+}
+
+#contacts .another-mails {
+  background: none;
+  cursor: pointer;
+  display: inline-block;
+  height: 30px;
+  width: 220px;
+  position: relative;
+  right: 100px;
+  z-index:1;
+  text-align: center;
+}
+
+#contacts .fourth-mail {
+  background: none;
+  cursor: pointer;
+  display: inline-block;
+  height: 30px;
+  width: 235px;
+  position: relative;
+  right: 100px;
+  z-index:1;
+}
+
+#contacts .another-phones {
+  background: none;
+  cursor: pointer;
+  display: inline-block;
+  height: 30px;
+  width: 185px;
+  position: relative;
+  right: 100px;
   z-index:1;
 }
 
@@ -1210,6 +1306,23 @@ a.scroll {
   position: absolute; 
   height: 100%; width: 0;
   background-color: #f2ea8c;
+}
+
+#contacts .paragraph-section-b::before {
+  left: -2px;
+}
+
+#contacts .section-b .accountant {
+  margin-left: 150px;
+}
+
+#contacts .section-b .navigation-safety {
+  text-align: center;
+}
+
+#contacts .section-b .assistant {
+  text-align: center;
+  margin-left: 102px;
 }
 
 /* Main Footer */

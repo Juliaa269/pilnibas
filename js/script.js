@@ -2,7 +2,7 @@ $(document).ready(function(){
   $('a[href^="#"]').click(function(e){
     e.preventDefault();
     if(document.getElementById($(this).attr('href').substr(1)) != null) { 
-       $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 3000);
+       $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 2000);
     }     
     return false;
   });
